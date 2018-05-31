@@ -1,0 +1,22 @@
+.root {
+    background-color: #11a3ff;
+    border: black 1px solid;
+    padding: 20px;
+}
+
+.float1 {
+    background-color: brown;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    margin: 5px;
+    float: left;
+}
+
+.float2 {
+    background-color: limegreen;
+    font-size: 20px;
+    /*text-align: center;*/
+    padding: 5px;    float: left;
+
+}

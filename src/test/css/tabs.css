@@ -1,0 +1,47 @@
+body {
+    margin: 10px;
+}
+
+.content {
+    border-left: 1px solid #11a3ff;
+    border-right: 1px solid #11a3ff;
+    border-bottom: 1px solid #11a3ff;
+    padding: 15px;
+    font-size: 12px;
+}
+
+.tabs {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+    -webkit-padding-end: 35px;
+    padding-bottom: 33px;
+    border-bottom: 1px solid #11a3ff;
+    font-size: 30px;
+}
+
+.tabs li {
+    float: left;
+    height: 32px;
+    background: #bbbbbb;
+    margin: 0 3px 0 0;
+    border: 1px solid #11a3ff;
+}
+
+.tabs li a {
+    text-decoration: none;
+    width: fit-content;
+    height: fit-content;
+}
+
+.tabs a:hover {
+    background: #ffffff;
+    color: #000;
+    border-bottom: 1px solid #ffffff;
+}
+
+/*li.home a:hover, li.news a:hover, li.tieba a:hover, li.wiki a:hover, li.music  a:hover{*/
+    /*border-bottom: 1px solid #ffffff;*/
+    /*color: #000000;*/
+    /*background-color: white;*/
+/*}*/

@@ -1,0 +1,34 @@
+table {
+    border: brown 3px solid;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+caption {
+    text-align: left;
+    padding: 20px;
+    font-size: 20px;
+}
+
+th {
+    border-collapse: collapse;
+    border: brown 1px solid;
+}
+
+tr td {
+    height: 200px;
+    font-size: 20px;
+    text-align: left;
+    text-align: -webkit-left;
+    text-align: -moz-left;
+    padding-top: 4px;
+    padding-left: 4px;
+    vertical-align: top;
+    border-collapse: collapse;
+    border: brown 1px solid;
+    color: black;
+}
+
+.expired {
+    color: #999999;
+}

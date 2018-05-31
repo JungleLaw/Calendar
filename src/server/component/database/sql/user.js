@@ -11,12 +11,17 @@ module.exports = {
   address  VARCHAR(50),
   mobile   VARCHAR(20),
   token    VARCHAR(100),
-  validate BOOL DEFAULT TRUE
-)`,
-    insert: 'INSERT INTO users (users.username,users.password) VALUES (\'%s\',\'%s\');',
-    query: 'SELECT * FROM users WHERE users.username = \'%s\' AND users.password = \'%s\'',
+  validate BOOL DEFAULT TRUE,
+  platform VARCHAR(10),
+  registration_time DATETIME NOT NULL DEFAULT NOW()
+);`,
+    insert: 'INSERT INTO users (users.username,users.password,users.platform) VALUES (\'%s\',\'%s\',\'%s\');',
+    query: 'SELECT * FROM users WHERE users.username = \'%s\' AND users.password = \'%s\' AND users.validate = 1',
+    logout: 'UPDATE users SET users.validate = 0 WHERE users.id = \'%d\';',
+    active: 'UPDATE users SET users.validate = 1 WHERE users.id = \'%d\';',
+    checkusernameexist: 'SELECT * FROM users WHERE users.username = \'%s\'',
     define() {
         mysql.excute(this.create);
-    },
-    checkusernameexist: 'SELECT * FROM users WHERE users.username = \'%s\''
+        require('../../database/sql/token').define();
+    }
 };

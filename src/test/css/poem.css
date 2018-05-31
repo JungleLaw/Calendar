@@ -1,0 +1,21 @@
+body {
+    background: url("../imgs/5975523_201305251614090967.jpg") no-repeat center top;
+    background-size: 100%;
+    text-align: center;
+    text-align: -moz-center;
+    text-align: -webkit-center;
+    margin: 0px;
+    padding: 0px;
+}
+
+div.content {
+    height: 160px;
+    writing-mode: tb-rl;
+    width: 660px;
+    text-align: left;
+    text-align: -moz-left;
+    text-align: -webkit-left;
+    border: 3px solid #666666;
+    line-height: 30px;
+    background: rgba(255, 255, 255, 0.5) no-repeat;
+}

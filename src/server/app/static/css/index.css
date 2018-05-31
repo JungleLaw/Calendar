@@ -3,3 +3,32 @@
     width: fit-content;
     height: fit-content;
 }
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+#p1 {
+    color: white;
+    font-size: 30px;
+    text-align: right;
+    text-align: -moz-right;
+    text-align: -webkit-right;
+}
+
+#p2 {
+    color: white;
+    font-size: 30px;
+    text-align: left;
+    text-align: -moz-left;
+    text-align: -webkit-left;
+    text-decoration: line-through;
+    text-transform: capitalize;
+}
+
+body {
+    background-image: url("../images/remember.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}

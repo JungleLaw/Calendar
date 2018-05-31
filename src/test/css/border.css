@@ -1,0 +1,8 @@
+.img1 {
+    border-color: black;
+    border-width: 10px;
+    border-radius: 10px;
+    border-style: dotted;
+    /*padding: 1px;
+    background-color: red;*/
+}

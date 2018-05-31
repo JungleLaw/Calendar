@@ -3,6 +3,7 @@ const sqls = require('../component/database/sql/user');
 const util = require('util');
 
 const User = require('../entity/User');
+const Token = require('../entity/Token');
 
 class SignController {
 
@@ -16,10 +17,10 @@ class SignController {
     }
 
     //注册
-    static async signUp(username, password) {
+    static async signUp(username, password, platform) {
         let html;
         try {
-            let result = await mysql.excute(util.format(sqls.insert, username, password));
+            let result = await mysql.excute(util.format(sqls.insert, username, password, platform));
             if (result.insertId) {
                 html = "register suc";
             } else {
@@ -33,10 +34,16 @@ class SignController {
 
     //登陆
     static async signIn(username, password, platform) {
+
         try {
             let result = await mysql.excute(util.format(sqls.query, username, password));
-            if (result.length) {
-                let user = new User(result[0].id, result[0].username);
+            let token = await Token.generate(result[0].id, platform);
+
+            if (result.length && token) {
+                let user = new User();
+                user.id = result[0].id;
+                user.username = result[0].username;
+                user.token = token;
                 return user;
             } else {
                 return null;
@@ -47,9 +54,15 @@ class SignController {
         }
     }
 
-    //注销
+    //登出
     static async signOut() {
         let result = await mysql.excute();
+    }
+
+    //注销
+    static async logOut(id) {
+        let result = await mysql.excute(util.format(sqls.logout, id));
+        return result.changedRows;
     }
 }
 

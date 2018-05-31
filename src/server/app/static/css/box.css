@@ -1,0 +1,105 @@
+#box1 {
+    width: 200pt;
+    height: 200pt;
+    /*border: 20px red solid;*/
+    border-color: red;
+    border-width: 20pt;
+    border-style: solid;
+    /*background-color: lime;*/
+    background-image: url("../images/remember.jpg");
+    background-size: contain;
+    margin: 20pt;
+    padding: 20pt;
+    outline-color: lime;
+    outline-width: 10pt;
+    outline-style: dashed;
+    float: left;
+}
+
+#box2 {
+    width: 200pt;
+    height: 200pt;
+    /*border: 20px red solid;*/
+    border-color: red;
+    border-width: 20pt;
+    border-style: solid;
+    /*background-color: lime;*/
+    background-image: url("../images/remember.jpg");
+    background-size: contain;
+    margin: 20pt;
+    padding: 20pt;
+    outline-color: lime;
+    outline-width: 10pt;
+    outline-style: dashed;
+    float: right;
+}
+
+#box-fixed {
+    width: 200pt;
+    height: 200pt;
+    /*border: 20px red solid;*/
+    border-color: white;
+    border-width: 20pt;
+    border-style: solid;
+    color: white;
+    /*background-color: lime;*/
+    background-image: url("../images/remember.jpg");
+    background-size: contain;
+    margin: 20pt;
+    padding: 20pt;
+    outline-color: green;
+    outline-width: 10pt;
+    outline-style: dashed;
+    float: left;
+}
+
+#box-absolute {
+    width: 200pt;
+    height: 200pt;
+    /*border: 20px red solid;*/
+    border-color: white;
+    border-width: 20pt;
+    border-style: solid;
+    color: white;
+    /*background-color: lime;*/
+    background-image: url("../images/remember.jpg");
+    background-size: contain;
+    margin: 20pt;
+    padding: 20pt;
+    outline-color: green;
+    outline-width: 10pt;
+    outline-style: dashed;
+    float: left;
+}
+
+#box-static {
+    width: 200pt;
+    height: 200pt;
+    /*border: 20px red solid;*/
+    border-color: white;
+    border-width: 20pt;
+    border-style: solid;
+    color: white;
+    /*background-color: lime;*/
+    background-image: url("../images/remember.jpg");
+    background-size: contain;
+    margin: 20pt;
+    padding: 20pt;
+    outline-color: green;
+    outline-width: 10pt;
+    outline-style: dashed;
+    float: right;
+}
+
+#box1, #box2 p {
+    color: red;
+    font-size: 30px;
+    font-family: Monospaced;
+    font-style: revert;
+}
+
+body {
+    background-image: url("../images/remember.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}

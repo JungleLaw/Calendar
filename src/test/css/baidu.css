@@ -1,0 +1,17 @@
+.navi {
+    margin: 0 auto;
+    padding: 0;
+    font-size: 20px;
+    border-bottom: 1px solid #00c;
+    background: #eee;
+    height: 30px;
+    width: 800px;
+}
+
+.navi li {
+    list-style-type: none;
+    float: left;
+    width: 70px;
+    margin: 0px;
+    padding: 0px;
+}

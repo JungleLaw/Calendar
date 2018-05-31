@@ -1,0 +1,33 @@
+body {
+    /*background: url("../imgs/index_banner.jpg") no-repeat;*/
+    background-size: 100%;
+}
+
+table {
+    border: black 1px solid;
+    border-collapse: collapse;
+}
+
+caption {
+    font-size: 30px;
+}
+
+td {
+    text-align: center;
+    border: black 1px solid;
+    padding: 10px;
+}
+
+th {
+    text-align: center;
+    border: black 1px solid;
+    padding: 10px;
+}
+
+.title {
+    background: green;
+}
+
+.altrow td, .altrow th {
+    background: brown;
+}

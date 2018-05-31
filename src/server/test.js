@@ -18,6 +18,7 @@ MongoClient.connect(url, function(err, db) {
     console.log("数据库已创建!");
     db.close();
 });*/
+/*
 
 console.log("test start");
 
@@ -74,3 +75,14 @@ app.listen(4400);
 console.log(`the server is start at port 4400`);
 // app.listen(config.dev.app.port);
 // console.log(`the server is start at port ${config.dev.app.port}`);
+*/
+
+const crypto = require('crypto');
+
+console.log(new Date().getTime());
+
+md5 = function (str) {
+    return crypto.createHash('md5').update(str).digest('Hex').toUpperCase();
+};
+
+console.log(md5("wujiandao"));

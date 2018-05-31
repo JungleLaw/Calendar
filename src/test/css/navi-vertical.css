@@ -1,0 +1,11 @@
+.navi-vertical li {
+    float: left;
+    list-style-type: none;
+}
+
+.navi-vertical li a {
+    display: block;
+    text-decoration: none;
+    border: black 1px solid;
+    margin: 20px;
+}

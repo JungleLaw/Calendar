@@ -1,0 +1,9 @@
+.root {
+    background-color: #11a3ff;
+    padding: 10px;
+}
+
+.block {
+    background-color: brown;
+    position: relative;
+}

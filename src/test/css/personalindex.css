@@ -1,0 +1,70 @@
+/* 内外边距通常让各个浏览器样式的表现位置不同 */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    scrollbar-3dlight-color: brown;
+    scrollbar-arrow-color: green;
+    scrollbar-base-color: yellow;
+    scrollbar-darkshadow-color: lime;
+    scrollbar-face-color: blue;
+    scrollbar-shadow-color: rebeccapurple;
+    /*scrollbar-3dlight-color: brown;
+    scrollbar-arrow-color: green;
+    scrollbar-base-color: yellow;
+    scrollbar-darkshadow-color: lime;
+    scrollbar-face-color: blue;
+    scrollbar-shadow-color: rebeccapurple;*/
+    -ms-scrollbar-3dlight-color: brown;
+    -ms-scrollbar-arrow-color: green;
+    -ms-scrollbar-base-color: yellow;
+    -ms-scrollbar-darkshadow-color: lime;
+    -ms-scrollbar-face-color: blue;
+    -ms-scrollbar-shadow-color: rebeccapurple;
+}
+
+.content_window {
+    background-image: url("../imgs/index_banner.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.titlebar tr td {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+}
+
+.bottom-window {
+    background-color: limegreen;
+}
+
+.bottom-window tr td div {
+    height: 1000px;
+}
+
+.left-window {
+    background-color: seagreen;
+}
+
+.right-window {
+    background-color: rebeccapurple;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link, a:active, a:visited {
+    color: white;
+}
+
+/*
+a:active, a:visited {
+    color: brown;
+}*/

@@ -6,7 +6,9 @@ let weather = new router();
 weather.post('/weather', async (ctx, next) => {
     console.log('weather');
     let city = ctx.request.body.city;
-    ctx.state.html = await controller.requestWeather(city);
+    let token = ctx.request.body.token;
+    let platform = ctx.request.body.platform;
+    ctx.state.html = await controller.requestWeather(city, token, platform);
     await next();
 });
 

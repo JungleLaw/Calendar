@@ -1,0 +1,14 @@
+
+img {
+    border: black solid 1px;
+    background-color: white;
+    padding: 10px;
+}
+
+.sign {
+    color: gold;
+    padding: 10px;
+    top: -50px;
+    left: 175px;
+    position: relative;
+}

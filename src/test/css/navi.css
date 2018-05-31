@@ -1,0 +1,29 @@
+
+.navi {
+    width: 200px;
+}
+
+.navi ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navi li {
+    border-bottom: lime 1px solid;
+    background: white;
+}
+
+.navi a {
+    color: black;
+    display: block;
+    border-left: brown 10px solid;
+    border-right: rebeccapurple 1px solid;
+    padding: 4px;
+    text-decoration: none;
+}
+
+.navi li a:hover {
+    background: red;
+    color: white;
+}

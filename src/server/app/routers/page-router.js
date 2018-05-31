@@ -12,12 +12,22 @@ page.get('/page', async (ctx, next) => {
     ctx.state.html = 'Hello world, app page! ';
     await next();
 });
-
 page.get("/", async (ctx) => {
     let title = 'Index';
     await ctx.render('index', {
         title,
     });
 });
-
+page.get("/box", async (ctx) => {
+    let title = 'Box';
+    await ctx.render('box', {
+        title,
+    });
+});
+page.get("/menu", async (ctx) => {
+    await ctx.render('menu');
+});
+page.get("/dropdown", async (ctx) => {
+    await ctx.render('dropdown');
+});
 module.exports = page;
